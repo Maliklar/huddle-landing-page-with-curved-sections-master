@@ -11,6 +11,128 @@ h1,h2,h3,h4,h5,h6{
 }
 body{
     font-family: 'Open Sans', sans-serif;
-    padding: 0px;
+    padding: 78px 62px;
     margin: 0px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+body>*{
+    width: 100%;
+}
+
+/* HEADER __________________________________________ */
+header{
+    display: flex;
+    padding-left: 18px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>button{
+    background-color: transparent;
+    border: 1px solid var(--Pink);
+    border-radius: 30px;
+    padding: 10px 31px;
+    font-size: 16px;
+    color: var(--Pink);
+}
+
+
+/* SECTION 1 ______________________________________ */
+.section1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 228px;
+}
+
+.section1>h1{
+    color: var(--VeryDarkCyan);
+    font-size: 3.0rem;
+    line-height: 0px;
+}
+
+.section1>p{
+    font-size: 20px;
+    max-width: 45%;
+    color: var(--VeryDarkCyan);
+    line-height: 30px;
+    margin-top: 16px;
+}
+
+.section1>button{
+    padding: 28px 100px;
+    font-size: 22px;
+    background-color: var(--Pink);
+    border-radius: 50px;
+    border: none;
+    color: var(--VeryPaleBlue);
+    margin-top: 28px;
+    
+}
+
+.stats-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 83.5%;
+    
+}
+
+.stat-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.stat-item>strong{
+    font-size: 5.9rem;
+    color: var(--VeryDarkCyan);
+    font-family: 'Open Sans', sans-serif;
+    /* line-height: 0px; */
+    margin: 0px;
+}
+.stat-item>p{
+    color: var(--Pink);
+    align-self: center;
+    font-size: 22px;
+}
+
+.section{
+    position: relative;
+    /* height: 900px;   */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg{
+    position: absolute;
+    z-index: -1;
+    margin: auto -62px;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    
+}
+
+.bg-middle{
+    background-color: var(--VeryPaleBlue);
+    height: 100%;
+}
+
+
+.section-content{
+    flex-grow: 1;
+}
+.section-image{
+    flex-grow: 1;
 }
