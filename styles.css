@@ -272,3 +272,70 @@ footer{
     border: none;
     color: var(--VeryPaleBlue);
 }
+
+
+@media screen  and (max-width: 1040px) {
+    :root{
+        font-size: 14px;
+    }
+    
+    header{
+        padding: 80px 20px;
+    }
+    .section1>h1 {
+        color: var(--VeryDarkCyan);
+        font-size: 3.0rem;
+        line-height: 1em;
+    }
+    .section1>p{
+        max-width: 100%;
+        color: var(--VeryDarkCyan);
+    }
+    .section1>button{
+        font-size: 1.2rem;
+    }
+    .section1>img{
+        width: 100%;
+    }
+    .stats-container{
+        flex-direction: column;
+    }
+    .section-content-main{
+        flex-direction: column;
+        padding: 10px 40px;
+    }
+    .section-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .section-content>p{
+        text-align: center;
+    }
+    .last-section>h1{
+        line-height: 1em;
+    }
+    footer{
+        margin-top: 200px;
+    }
+    .footer-content{
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 100px 20px;
+
+    }
+    .form{
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        gap: 10px;
+        height: auto;
+        align-items: flex-end;
+        
+    }
+    .form>*{
+        height: 48px;
+    }
+}
